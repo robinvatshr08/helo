@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRUD Operations using Local Storage Connectivity</title>
+	<link rel="stylesheet" href="contactcss.css">
+</head>
+<body>
+	<h1>User Management System</h1>
+	<div class=""></div>
+	<form id="myForm">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder= "Enter Name" required>
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email" placeholder= "Enter Email" required>
+		<label for="phone">Phone:</label>
+		<input type="text" id="phone" name="phone" placeholder= "Enter Contact Detail" required>
+		<label for="address">Address:</label>
+		<textarea id="address" name="address" placeholder= "Enter Address" required></textarea>
+		<button type="submit" id="submitBtn">Add</button>
+		<button type="button" id="updateBtn" style="display: none;">Update</button>
+		<button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+	</form>
+	<table id="myTable">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+				<th>Address</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+	<script src="contactjs.js"></script>
+</body>
+</html>

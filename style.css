@@ -1,0 +1,247 @@
+/* this is a comment */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* google image in navigation bar */
+#google{
+    width: 53px;
+    height: 53px;
+    border: 1px solid green;
+    border-radius: 37px;
+}
+/* navigation bar */
+.navigation{
+    display:flex;
+    flex-direction: row;
+    /* border: 1px solid green; */
+    font-family: 'Baloo Bhai';
+}
+.navigation::before{
+    content:"";
+    background-color:black;
+    position:absolute;
+    height: 60px;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+/* unordered list */
+.navigation ul{
+    display:flex;
+    flex-direction:row;
+    /* border: 1px solid #eddc46; */
+    list-style: none;
+    margin: 0px;
+    /* padding: 10px 0px 0px 0px; */
+}
+/* list item */
+ul .item{
+    /* padding:0px 0px 0px 67px; */
+}
+/* list item with link */
+ul li a{
+    color:whitesmoke;
+    border-radius: 10px;
+    margin:20px;
+    display: block;
+    text-decoration: none;
+    padding:0px 10px 0px 10px;
+}
+ul li a:hover{
+    color:black;
+    background-color:white;
+    
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 353px;
+    /* border: 2px solid red; */
+    /* border:2px solid red; */
+}
+#home::before{
+    content:'';
+    
+    position:absolute;
+    background: url('img/tomato-back.jpg') no-repeat center center/cover;
+    height:428px;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    opacity:0.89;
+    
+    /* border:2px solid green; */
+}
+
+/* home heading */
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+/* home paragraph */
+#home p{
+    color:white;
+    font-size:1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+/* utility classes */
+.h-primary{
+    font-size:2.9rem;
+    padding: 20px;
+}
+/* button design */
+.btn{
+    padding: 0px 10px 0px 10px;
+    margin: 14px 0px 0px 0px;
+    border: 2px solid white;
+    color: black;
+    background-color: #e46a7c;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* service section */
+.services-container{
+    /* border: 2px solid red; */
+    /* margin: 168px 0px 0px 0px; */
+    /* display:flex; */
+}
+/* primary heading  */
+.h-primary-center{
+    text-align:center;
+    font-size: 2.39rem;
+    font-family: 'Bree Serif';
+    margin: 19px 0px 0px 0px;
+}
+
+#services2{
+    /* border:1px solid blue; */
+    margin: 3px 21px 0px 21px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    margin: 7px 46px 0px 49px;
+    border: 1px solid rgb(205 26 26);
+    border-radius: 19px;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgb(247 243 246);
+    padding: 0px 5px 5px 5px;
+}
+/* box images */
+.box img{
+    height: 149px;
+    width: 160px;
+    margin: 4px;
+    justify-content: center;
+    display: block;
+    margin: auto;
+    border-radius: 1px solid green;
+    /* border: 1px solid green; */
+    border-radius: 18px;
+}
+/* box heading */
+.box #h-secondary{
+    text-align:center;
+}
+
+/* client section */
+#clients-section{
+    height: 257px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px 0px 0px;
+}
+#clients-section::before{
+    /* content:'';
+    background:url('img/fruits.jpg')no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    left:0px; */
+    content:"";
+    
+    position:absolute;
+    background: url('img/vagetable5e.jpg');
+    height:257px;
+    width:100%;
+    /* top:0px;
+    left:0px; */
+    z-index:-1;
+    opacity:0.3; 
+}
+#clients img{
+    height: 57px;
+    width: 57px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 35px 0px 44px;
+}
+
+/* contact section */
+#contact .h-primary-center {
+    text-align: center;
+    font-size: 2.39rem;
+    font-family: 'Bree Serif';
+    margin: 0px 0px 10px 0px;
+    padding: 13px 0px 0px 0px;
+}
+#contact{
+    
+    position: relative;
+    height: 500px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    background: url('img/contact3.jpg')no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* in form section */
+form textarea ,input{
+
+    width: 341px;
+    /* border-radius: 10px; */
+    padding: 2px 0px 2px 10px;
+    margin: 2px 0px 0px 0px;
+}
+form input:hover{
+    border-radius:7px;
+    background-color: rgb(238, 237, 237);
+}
+
+/* footer section */
+footer{
+    color:white;
+    background-color: rgb(59, 58, 58);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: red;
+  }
